@@ -1,0 +1,149 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: 'Poppins', sans-serif;
+}
+
+body {
+	background-color: rgba(173, 216, 230, 0.274);
+	overflow-x: hidden;
+}
+
+h2 {
+	font-size: 22px;
+	font-weight: 500;
+}
+
+h5 {
+	font-size: 19px;
+	font-weight: 400;
+}
+
+p {
+	font-size: 16px;
+	font-weight: 300;
+}
+
+section {
+	width: 100vw;
+	height: 100vh;
+	display: grid;
+	justify-content: center;
+	align-content: center;
+}
+
+.item-wrapper {
+	max-width: 650px;
+	display: grid;
+	border-radius: 10px;
+	box-shadow: 0 0 30px rgba(128, 128, 128, 0.5);
+}
+
+.item {
+	padding: 35px 25px;
+}
+
+.item1 {
+	background-color: #fff;
+	grid-row-start: 1;
+	grid-column-start: 1;
+	grid-row-end: 2;
+	grid-column-end: 3;
+}
+
+.item2 {
+	grid-row-start: 2;
+	grid-column-start: 1;
+	grid-row-end: 3;
+	grid-column-end: 2;
+	width: 100%;
+	background-color: rgb(3, 138, 138);
+}
+
+.item3 {
+	grid-row-start: 2;
+	grid-column-start: 2;
+	grid-row-end: 3;
+	grid-column-end: 3;
+	width: 100%;
+	background-color: rgb(1, 160, 160);
+}
+
+.item1 h2 {
+	color: rgb(1, 160, 160);
+	margin: 10px 0;
+}
+
+.item1 p {
+	color: gray;
+}
+
+.item1 h5 {
+	color: #9CCC65;
+}
+
+.item1 p {
+	line-height: 22px;
+}
+
+.item2 h2, .item2 h5, .item2 p {
+	color: #fff;
+}
+
+.item2 h5 span {
+	font-size: 30px;
+	font-weight: bold;
+}
+
+.item2 button {
+	color: #fff;
+	background-color: #9CCC65;
+	border: none;
+	font-size: 18px;
+	width: 100%;
+	padding: 10px 0;
+	margin-top: 30px;
+	border-radius: 5px;
+	box-shadow: 0 0 10px gray;
+	font-weight: bold;
+}
+
+.item3 {
+	color: #fff;
+}
+
+.item3 h2 {
+	margin-bottom: 10px;
+}
+
+@media screen and (max-width: 768px) {
+	section {
+		height: auto;
+		margin: 70px 0;
+		padding: 0 15px;
+	}
+
+	.item-wrapper {
+		max-width: 450px;
+	}
+
+	.item2 {
+		grid-row-start: 2;
+		grid-column-start: 1;
+		grid-row-end: 3;
+		grid-column-end: 3;
+		width: 100%;
+		background-color: rgb(1, 160, 160);
+	}
+
+	.item3 {
+		grid-row-start: 3;
+		grid-column-start: 1;
+		grid-row-end: 4;
+		grid-column-end: 3;
+		width: 100%;
+		background-color: rgba(1, 160, 160, 0.8);
+	}
+
+}
